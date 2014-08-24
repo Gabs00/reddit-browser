@@ -1,5 +1,6 @@
 var express = require('express');
 var restler = require('restler');
+var fs = require('fs');
 
 var app = express.createServer(express.logger());
 app.get('/', function(req, res, next){
