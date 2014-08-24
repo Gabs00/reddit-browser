@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="./bower_components/jquery/dist/jquery.js"></script>
+  <title></title>
+</head>
+<body>
+  <div id="content">
+  </div>
+<script>
+  $(function(){
+    $.get('http://localhost:5000/reddit', function(data){
+      $('#content').append(data);
+    });
+  });
+</script>
+<form>
+  <button>reload</button>
+</form>
+</body>
+</html>
